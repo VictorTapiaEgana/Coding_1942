@@ -1,15 +1,9 @@
 <html>
 <head>
 	<title>1942 Game</title>
-<style type="text/css">	
-    body{
-		/* background-color:black; */
-		
-		
-	}
+<style type="text/css">	    
 
-	#container{
-		/* background: url('background.jpg'); */
+	#container{	
 		background: url('./assets/fondo.png');
 		background-size: cover;
 		background-position: -100px;
@@ -31,8 +25,7 @@
 		width:28px;
 		height:28px;
 		position:absolute;
-		transform: rotate(180deg);
-		border: 1px  green solid;
+		transform: rotate(180deg);		
 	}
 
 	.enemy2{
@@ -41,8 +34,7 @@
 		width:50px;
 		height:40px;
 		position:absolute;
-		transform: rotate(180deg);
-		border: 1px yellow solid;
+		transform: rotate(180deg);		
 	}
 
 	.enemy3{
@@ -51,8 +43,7 @@
 		width:26px;
 		height:26px;
 		position:absolute;
-		transform: rotate(180deg);
-		border: 1px red solid;
+		transform: rotate(180deg);	
 	}
 
 	.bullet{
@@ -69,30 +60,41 @@
 		top:8;
 		left:788px;
 		width: 200px;	
-		background-color:black;
+		background-color:rgba(0, 0, 0, 0.5);
 		padding:10px;
 		font-size:30px;
-		font-family: Arial;	
-		color: chartreuse;
+		font-family: Arial;		
+		color: greenyellow;	
+	}
+
+	#explosion{
+		background : url('1942.gif');		
+		background-position: 0 -30px; 
+		position: absolute;
+		width: 28px;
+		height: 28px;
+		transform: scale(2);	
+	}
+	#titulo{
+		position: absolute;
+		width: 200px;
 	}
 	
 </style>
 </head>
 <body>
+	<img id="titulo" src="./assets/title.png" alt="img titulo">
 	
 	<div id='container'>
+
 		<div id='hero' style='top:500px; left:510px;'></div>
-
-		<div id='enemies'>					
-		</div>
-
-		
-		<div id='bullets'></div>	
+		<div id='enemies'></div>	
+		<div id='bullets'></div>
+		<div id="explosion"></div>	
 
 	</div>
 
-	<div id='score'>100</div>
-
+	<div id='score'>100</div> 
 
 <script src="./js/javascript.js"></script>
 
