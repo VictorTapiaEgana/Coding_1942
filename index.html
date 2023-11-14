@@ -1,16 +1,22 @@
 <html>
 <head>
 	<title>1942 Game</title>
+<style type="text/css">	
+    body{
+		/* background-color:black; */
+		
+		
+	}
 
-<style type="text/css">
-	body{
-		background-color:black;
-	}
 	#container{
-		background: url('background.jpg');
+		/* background: url('background.jpg'); */
+		background: url('./assets/fondo.png');
+		background-size: cover;
+		background-position: -100px;
 		width:1000px;
-		height:550px;
+		height:550px;		
 	}
+
 	#hero{
 		background: url('1942.gif');
 		background-position: -85px -180px;
@@ -18,13 +24,37 @@
 		height:28px;
 		position:absolute;
 	}
+
 	.enemy1{
 		background: url('1942.gif');
 		background-position: -30px -10px;
 		width:28px;
 		height:28px;
 		position:absolute;
+		transform: rotate(180deg);
+		border: 1px  green solid;
 	}
+
+	.enemy2{
+		background: url('1942.gif');
+		background-position: -40px -110px;
+		width:50px;
+		height:40px;
+		position:absolute;
+		transform: rotate(180deg);
+		border: 1px yellow solid;
+	}
+
+	.enemy3{
+		background: url('1942.gif');
+		background-position: -85px -180px;
+		width:26px;
+		height:26px;
+		position:absolute;
+		transform: rotate(180deg);
+		border: 1px red solid;
+	}
+
 	.bullet{
 		background: url('1942.gif');
 		background-position: -185px -400px;
@@ -32,41 +62,39 @@
 		height:18px;
 		position:absolute;
 	}
+
 	#score{
-		position:absolute;
-		border:10px solid red;
-		top:20px;
-		left:800px;
-		background-color:white;
+		position:absolute;	
+		text-align: center;
+		top:8;
+		left:788px;
+		width: 200px;	
+		background-color:black;
 		padding:10px;
 		font-size:30px;
 		font-family: Arial;	
+		color: chartreuse;
 	}
+	
 </style>
 </head>
 <body>
+	
 	<div id='container'>
-		<div id='hero' style='top:300px; left:300px;'></div>
-		<div id='enemies'>
-			<div class='enemy1' style='top:100px; left:100px;'></div>
-			<div class='enemy1' style='top:100px; left:200px;'></div>
-			<div class='enemy1' style='top:100px; left:300px;'></div>
-			<div class='enemy1' style='top:100px; left:400px;'></div>
+		<div id='hero' style='top:500px; left:510px;'></div>
+
+		<div id='enemies'>					
 		</div>
-		<div id='bullets'>
-			<div class='bullet' style='top:150px; left:200px;'></div>
-			<div class='bullet' style='top:250px; left:200px;'></div>
-			<div class='bullet' style='top:350px; left:200px;'></div>
-			<div class='bullet' style='top:450px; left:200px;'></div>
-		</div>	
+
+		
+		<div id='bullets'></div>	
+
 	</div>
 
 	<div id='score'>100</div>
 
 
-<script>
-
-</script>
+<script src="./js/javascript.js"></script>
 
 </body>
 </html>
