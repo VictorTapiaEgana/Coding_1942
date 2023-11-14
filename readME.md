@@ -11,3 +11,14 @@ Challenges
 6. ✅ (Advanced) Collision Detection for the bullet – Have the score go up by 10 when an enemy is struck down. 
 7. ✅ (Advanced) Get the enemy to explode when it is hit
 8. ✅ (Advanced) When the bullet hits, make a sound.
+
+
+## Uso
+
+Usar las Flechas de teclado para moverse ⬅⬆➡⬇
+Dispare con la tecla espacio [SPACE]
+
+## Puntuacion
+
+10pts por cada avion destruido.
+-500pts por chocar con un avion enemigo.
