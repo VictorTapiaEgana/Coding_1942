@@ -1,3 +1,7 @@
+## Screenshots
+
+![App Screenshot](https://github.com/VictorTapiaEgana/Coding_1942/blob/master/Gif_Animado.gif)
+
 Challenges
 1. ✅ (Easy) Change the background of the game
 2. ✅ (Easy) Get the hero to move up and down
