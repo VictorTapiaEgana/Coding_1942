@@ -21,6 +21,6 @@ Challenges
 - 10pts por cada avion destruido.
 - -500pts por chocar con un avion enemigo.
 
-##Extras
+## Extras
 - La posicion inicial, tipo de Avion y Velocidad de los Enemigos es Alearoria
   
