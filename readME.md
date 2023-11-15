@@ -14,11 +14,13 @@ Challenges
 
 
 ## Uso
-
 - Usar las Flechas de teclado para moverse ⬅⬆➡⬇
 - Dispare con la tecla espacio [SPACE]
 
 ## Puntuacion
-
 - 10pts por cada avion destruido.
 - -500pts por chocar con un avion enemigo.
+
+##Extras
+- La posicion inicial, tipo de Avion y Velocidad de los Enemigos es Alearoria
+  
